@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JLock – Privacy Policy</title>
+<style>
+  :root { --bg:#F5F7FA; --surface:#FFFFFF; --accent:#1A56DB; --text:#1C2033; --muted:#5D6680; --border:#DDE2EE; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0F1219; --surface:#171C27; --accent:#4F83F0; --text:#DCE1F0; --muted:#9AA3BF; --border:#232A3A; }
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font:15px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 16px 72px; }
+  h1 { font-size:24px; line-height:1.25; margin-bottom:4px; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:28px; }
+  .intro { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px 18px; margin-bottom:32px; color:var(--muted); }
+  section { margin-bottom:28px; padding-left:14px; border-left:2px solid var(--accent); }
+  h2 { font-size:16px; margin-bottom:8px; }
+  p, li { color:var(--muted); font-size:14px; }
+  p + p { margin-top:8px; }
+  ul { margin:8px 0 0 18px; }
+  li + li { margin-top:4px; }
+  code { font-size:12px; background:var(--surface); border:1px solid var(--border); border-radius:4px; padding:1px 5px; color:var(--accent); }
+  a { color:var(--accent); }
+  footer { border-top:1px solid var(--border); margin-top:36px; padding-top:20px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>JLock – Privacy Policy</h1>
+<p class="sub">App: JLock (it.fumagalli.jlock) · Ultimo aggiornamento: 15 ottobre 2026</p>
+
+<div class="intro">
+JLock è un filtro anti-spam per le chiamate. Il filtro funziona interamente sul dispositivo: rubrica, numeri e chiamate non vengono mai inviati a server esterni.
+La versione gratuita mostra annunci pubblicitari forniti da Google AdMob. La versione Premium, acquistabile in-app tramite Google Play, rimuove gli annunci.
+</div>
+
+<section>
+  <h2>1. Titolare del trattamento</h2>
+  <p>Jacopo Fumagalli, sviluppatore privato dell'app JLock.<br>
+  Contatto: <a href="mailto:jazzanumberone@gmail.com">jazzanumberone@gmail.com</a></p>
+</section>
+
+<section>
+  <h2>2. Dati trattati solo sul dispositivo</h2>
+  <p>Questi dati sono usati localmente per far funzionare il filtro e non lasciano mai il dispositivo:</p>
+  <ul>
+    <li><strong>Contatti</strong>: la rubrica viene consultata per verificare se il numero chiamante è salvato.</li>
+    <li><strong>Numero chiamante</strong>: usato per bloccare la chiamata e, se attivato, per inviare l'SMS di risposta automatica. Non viene trasmesso a terzi.</li>
+    <li><strong>Impostazioni dell'app</strong> (filtri, contatore chiamate bloccate, stato Premium): salvate in memoria locale.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>3. Pubblicità (versione gratuita)</h2>
+  <p>La versione gratuita mostra banner pubblicitari tramite <strong>Google AdMob</strong> (Google Ireland Limited / Google LLC). Per mostrare e misurare gli annunci, l'SDK di Google può raccogliere:</p>
+  <ul>
+    <li>l'ID pubblicità del dispositivo (Android Advertising ID);</li>
+    <li>indirizzo IP e posizione approssimativa ricavata dall'IP;</li>
+    <li>informazioni sul dispositivo (modello, sistema operativo, lingua);</li>
+    <li>dati di interazione con gli annunci (visualizzazioni, clic) e dati diagnostici.</li>
+  </ul>
+  <p>Questi dati sono trattati da Google secondo la propria informativa:
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy di Google</a> ·
+  <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Come Google utilizza i dati dei siti e delle app partner</a>.</p>
+</section>
+
+<section>
+  <h2>4. Consenso (utenti in UE, SEE, Regno Unito e Svizzera)</h2>
+  <p>Al primo avvio JLock mostra un modulo di consenso gestito dalla piattaforma di Google (User Messaging Platform). Puoi scegliere se accettare annunci personalizzati, solo annunci non personalizzati, oppure gestire le singole finalità.</p>
+  <p>Puoi modificare o revocare il consenso in qualsiasi momento dalla voce <strong>"Privacy annunci"</strong> nel menu dell'app. Puoi anche reimpostare o eliminare l'ID pubblicità dalle impostazioni di Android (Impostazioni → Privacy → Annunci).</p>
+</section>
+
+<section>
+  <h2>5. Acquisti in-app (JLock Premium)</h2>
+  <p>L'acquisto di JLock Premium è gestito interamente da <strong>Google Play</strong>. Lo sviluppatore non riceve né conserva i tuoi dati di pagamento (carta, conto, indirizzo di fatturazione).</p>
+  <p>L'app riceve da Google Play solo la conferma dell'acquisto, usata per sbloccare Premium e ripristinarlo su un nuovo dispositivo. Per gli utenti Premium non vengono mostrati annunci e l'SDK pubblicitario non viene avviato.</p>
+</section>
+
+<section>
+  <h2>6. Permessi richiesti</h2>
+  <ul>
+    <li><code>READ_CONTACTS</code>: verifica locale dei numeri in rubrica.</li>
+    <li><code>SEND_SMS</code>: invio dell'SMS di risposta automatica (se attivato).</li>
+    <li><code>RECEIVE_BOOT_COMPLETED</code>: riattivazione del filtro all'avvio (opzionale).</li>
+    <li>Ruolo <code>CALL_SCREENING</code>: filtro delle chiamate tramite il servizio nativo di Android.</li>
+    <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>: caricamento degli annunci e comunicazione con Google Play per gli acquisti.</li>
+    <li><code>AD_ID</code>: accesso all'ID pubblicità per gli annunci.</li>
+    <li><code>BILLING</code>: acquisti in-app tramite Google Play.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>7. Basi giuridiche</h2>
+  <ul>
+    <li>Funzionamento del filtro e acquisti: esecuzione del servizio richiesto dall'utente.</li>
+    <li>Annunci personalizzati e uso di identificatori pubblicitari: consenso dell'utente (revocabile).</li>
+    <li>Annunci non personalizzati e prevenzione delle frodi: legittimo interesse, nei limiti previsti dalla normativa.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>8. Conservazione</h2>
+  <p>I dati locali restano sul dispositivo finché l'app è installata e vengono eliminati disinstallandola. I dati raccolti da Google per pubblicità e pagamenti sono conservati secondo le policy di Google.</p>
+</section>
+
+<section>
+  <h2>9. I tuoi diritti</h2>
+  <p>Ai sensi del GDPR (Reg. UE 2016/679) puoi chiedere accesso, rettifica, cancellazione, limitazione od opposizione al trattamento, oltre a revocare il consenso, scrivendo all'indirizzo indicato al punto 1. Per i dati trattati da Google puoi anche usare gli strumenti di <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Google Account</a>.</p>
+  <p>Hai il diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>).</p>
+</section>
+
+<section>
+  <h2>10. Minori</h2>
+  <p>JLock non è destinata a bambini sotto i 13 anni e non raccoglie consapevolmente dati di minori.</p>
+</section>
+
+<section>
+  <h2>11. Modifiche</h2>
+  <p>Eventuali aggiornamenti di questa informativa saranno pubblicati su questa pagina con la nuova data di aggiornamento.</p>
+</section>
+
+<footer>
+  JLock · Jacopo Fumagalli · <a href="mailto:jazzanumberone@gmail.com">jazzanumberone@gmail.com</a>
+</footer>
+
+</div>
+</body>
+</html>
